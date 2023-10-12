@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0.3px 0.3px 0.3px black;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 3px 15px;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: black;
+  color: white;
+}
+
+.active {
+  box-shadow: 0.3px 0.3px 0.3px 0.5px;
+  background-color: black;
+  color: #fff;
+}
+
+section {
+  margin-bottom: 30px;
+  outline: 0.3px solid indigo;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+section article {
+  font-size: 20px;
+}
+
+section:nth-child(even) {
+  background-color: lightgray;
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    width: 50%;
+    margin: 50px auto;
+  }
+  header {
+    justify-content: center;
+    gap: 50px;
+  }
+}
